@@ -1,0 +1,255 @@
+/* import bitstream font */
+@font-face {
+    font-family: 'bitstream_vera_sans_monoroman';
+    src: url('VeraMono-webfont.woff');
+    font-style: normal;
+}
+
+body {
+	background: #547184; /*background image/colour for page*/
+	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+	/* font-size: 100%; /*sets all fonts to default font size for making relative changes. Typically this is 16px.*/
+	color:  black;
+}
+
+.header {
+    background: black;
+    padding: 0.75em;
+    margin-top: 0.75em;
+}
+
+.header-image {
+    width: 50%;
+    height: 121px;
+    overflow: hidden;
+    float: right;
+    position: relative;
+    top: -12px;
+    right: -12px;
+}
+
+.header-image img {
+    position: relative;
+    top: -80px;
+    right: -12px;
+    overflow: hidden;
+}
+
+h1, h2, h3 {
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+.title-text {
+  display: block;
+  font-size: 64px;
+  color: white;
+  font-family: "Arial Black", Gadget, sans-serif;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.topnav {
+  margin: 1em auto 1.75em auto;
+  background: white;
+  width: 100%%;
+}
+
+.mobile-menu, .mobile-menu-links {
+  display: none;
+}
+
+.mobile-menu {
+    width: 18%;
+    margin: 0 auto 0 auto;
+}
+
+.hamburger, .cross {
+  text-decoration: overline underline;
+  z-index: 999;
+  padding:0.5em 0 0.5em 0;
+  font-size:3em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.mobile-menu-links{z-index:1000000; text-transform: uppercase; font-weight:bold; font-size:0.8em; width:96.5%; background:white;  position:absolute; text-align:center; font-size:2.75em;}
+.mobile-menu-links ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.mobile-menu-links li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.mobile-menu-links li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.mobile-menu-links ul li a { text-decoration:none;  margin: 0px; color:black;}
+.mobile-menu-links ul li a:hover {  color:black; text-decoration:none;}
+.mobile-menu-links a{text-decoration:none; color:#666;}
+.mobile-menu-links a:hover{text-decoration:none; color:#666;}
+
+.topnav ul.menu {
+  width: 80%;
+  margin: auto;
+}
+
+ul.menu li {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75em;
+  }
+
+.menu>li>a {
+  color: black;
+}
+.menu>li>a:hover {
+  color: black;
+}
+
+.main-content {
+    background: white;
+    padding: 1em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 10px solid #547184;
+    margin: 1em 0;
+    padding: 0;
+    width: 110%;
+    position: relative;
+    left: -5%;
+}
+
+aside {
+  font-style: italic;
+  font-size: 0.75em;
+}
+
+.end-block {
+    height: 80px;
+    background: #547184;
+}
+
+.footer-wrapper {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: white;
+	padding: 1.2em 0 0.5em 0;
+	border-top: solid 1px;
+}
+
+footer {
+	width: 60%;
+	text-align: center;
+	margin: 0 auto 0 auto;
+}
+
+footer ul.menu {
+    width: 80%;
+    margin: auto;
+}
+
+footer li a {
+  font-size: large;
+}
+
+/* MEDIA QUERIES */
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .mobile-menu, .mobile-menu-links {
+      display: block;
+    }
+
+    .lscape-menu {
+      display: none;
+    }
+
+		p {
+      font-size: 3em;
+    }
+
+    h1 {
+      font-size: 6em;
+    }
+
+    h2 {
+      font-size: 3.4em;
+    }
+
+    h3 {
+      font-size: 3.2em;
+      font-weight: bold;
+    }
+
+    .topnav ul.menu {
+      width: 100%;
+      margin: 0;
+    }
+
+    ul.menu li {
+      font-size: 1.8em;
+    }
+
+    .end-block {
+      height: 120px;
+    }
+    
+    .footer-wrapper {
+    	position: fixed;
+    	bottom: 0;
+    	left: 0;
+    	width: 100%;
+    	background: white;
+    	padding: 1.5em 0;
+    	border-top: solid 1px;
+    }
+
+    footer {
+      width: 100%;
+    }
+
+    footer.ul menu {
+      width: 100%;
+    }
+
+    footer ul.menu li a {
+      font-size: 1em;
+    }
+
+    .picatic-widget-button.pwb-small {
+      font-size: 32px;
+    }
+	}
+
+
+/* @media screen and (device-width: 360px)
+	and (device-height: 640px)
+	and (-webkit-device-pixel-ratio: 2) {
+
+}*/
+
+/* END MEDIA QUERIES */
