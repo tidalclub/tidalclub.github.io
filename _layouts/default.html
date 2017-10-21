@@ -1,33 +1,83 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        	<li><a href="/">Home</a></li>
-	        	<li><a href="/sheffield">Sheffield</a></li>
-        		<li><a href="/london">London</a></li>
-        		<li><a href="/atlanta">Atlanta</a></li>
-        		<li><a href="/contact">Contact</a></li>
-		      	<li><a href="/start">Start your own Tidal Club</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-              <li><a href="https://twitter.com/tidalclub">twitter</a></li>
-              <li><a href="https://www.facebook.com/tidalcycles/?fref=ts">facebook</a></li>
-              <li><a href="https://www.picatic.com/team/468">events</a></li>
-              <li><a href="https://tidalcycles.org/">tidalcycles.org</a></li>
+<html>
+<head>
+	<!-- scripts and stylesheets -->
+	<meta name="theme-color" content="#547184" />
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/burger-menu.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+	<meta name="description" content="Club for TidalCycles users, the live coding language for exploring musical pattern.">
+	<meta name="keywords" content="livecoding,tidalcycles,tidal,algorave">
+	<title>Tidal Club</title>
+</head>
+<body>
+	<div class="row">
+
+		<!-- MAIN CONTENT -->
+
+		<!-- HEADER -->
+		<div class="large-2 columns"><!-- ... -->
+			&nbsp;
+		</div>
+		<div class="large-8 columns">
+			<div class="header">
+				<div class="header-image">
+					<img src="assets/tidal-club.jpg" alt="People with laptops at tidal club">
+				</div>
+				<div class="header-text">
+				<span class="title-text">Tidal Club</span>
+				</div>
+			</div>
+
+			<!-- /HEADER -->
+			<!-- NAVIGATION -->
+			<nav class="topnav">
+				<div class="mobile-menu">
+				<button class="hamburger">MENU</button>
+  			<button class="cross">CLOSE</button>
+			</div>
+			<div class="lscape-menu">
+				<ul class="menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="sheffield.html">Sheffield</a></li>
+					<li><a href="london.html">London</a></li>
+					<li><a href="atlanta.html">Atlanta</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="start.html">Start your own Tidal Club</a></li>
 				</ul>
-			</footer>
-		</body>
+				</div>
+				<div class="mobile-menu-links">
+					<ul class="menu-links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="sheffield.html">Sheffield</a></li>
+						<li><a href="london.html">London</a></li>
+						<li><a href="atlanta.html">Atlanta</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="start.html">Start your own Tidal Club</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="main-content">
+{{ content }}
+        </div>
+		<div class="large-2 columns">&nbsp;<!-- ... --></div>
+		<div class="end-block">&nbsp;</div>
+	</div>
+	<div class="footer-wrapper">
+	<footer>
+			<ul class="menu">
+				<li><a href="https://twitter.com/tidalclub">twitter</a></li>
+				<li><a href="https://www.facebook.com/tidalcycles/?fref=ts">facebook</a></li>
+				<li><a href="https://www.picatic.com/team/468">events</a></li>
+				<li><a href="https://tidalcycles.org/">tidalcycles.org</a></li>
+			</ul>
+		</footer>
+		</div>
+	</div>
+	</body>
 	</html>
