@@ -30,8 +30,8 @@ body {
 
 .header-image img {
     position: relative;
-    top: -80px;
-    right: -12px;
+    top: 5px;
+    right: 7px;
     overflow: hidden;
 }
 
@@ -184,6 +184,10 @@ footer li a {
       display: block;
     }
 
+    .header-image img {
+      left: 80px;
+    }
+
     .lscape-menu {
       display: none;
     }
@@ -217,7 +221,7 @@ footer li a {
     .end-block {
       height: 120px;
     }
-    
+
     .footer-wrapper {
     	position: fixed;
     	bottom: 0;
