@@ -31,7 +31,6 @@ body {
 .header-image img {
     position: relative;
     top: 5px;
-    right: 7px;
     overflow: hidden;
 }
 
